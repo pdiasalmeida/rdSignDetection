@@ -1,4 +1,4 @@
-# Traffic sign detection and recognition
+# Traffic sign detection
 
 Project for traffic sign detection based on color segmentation. Supports red and blue traffic signs.
 Based on the code available at: https://sites.google.com/site/mcvibot2011sep/home

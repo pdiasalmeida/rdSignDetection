@@ -14,20 +14,20 @@ RSDS::RSDS( cv::Mat image )
 	_aspect_are = 1500;
 	_low_ratio = 0.25;
 	_high_ratio = 1.3;
-	_dist_threshold = 70;
+	_dist_threshold = 30;
 
 	_minSignArea = 750;
 	_maxSignArea = 5000;
 }
 
-RSDS::RSDS( )
+RSDS::RSDS()
 {
 	_baseImage = cv::Mat();
 
 	_aspect_are = 1500;
 	_low_ratio = 0.25;
 	_high_ratio = 1.3;
-	_dist_threshold = 800;
+	_dist_threshold = 30;
 
 	_minSignArea = 750;
 	_maxSignArea = 5000;

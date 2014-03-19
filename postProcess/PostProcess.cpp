@@ -106,7 +106,6 @@ cv::Mat PostProcess::elimination( cv::Mat fimage, std::vector< std::vector< cv::
 		double lowAspectRatio, double highAspectRatio)
 {
     long int area=image.size().area();                   //area of the original image
-    // cout<<"Aria/1500: "<<area/1500<<endl;
 
     cv::Mat dst = cv::Mat::zeros( fimage.rows, fimage.cols, CV_8U );   //destination image
 
@@ -116,8 +115,6 @@ cv::Mat PostProcess::elimination( cv::Mat fimage, std::vector< std::vector< cv::
     std::vector< std::vector< cv::Point > > contours;
     std::vector< cv::Vec4i > hierarchy;
     findContours( fimage, contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE );
-
-    // cout<<"Dimensiune: "<<contours.size()<<endl;
     
     //for each contour   
     for( unsigned int i = 0; i < contours.size(); i++ )
@@ -128,7 +125,6 @@ cv::Mat PostProcess::elimination( cv::Mat fimage, std::vector< std::vector< cv::
         // compute the aspect ratio
         double ratio=(double)b.width/(double)b.height;
 
-        //long int areaRegion=b.size.area();
         long int areaRegion=b.area();
 
         //conditions for eliminating the objects

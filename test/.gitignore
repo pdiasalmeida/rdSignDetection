@@ -1,4 +1,4 @@
-# ignore images, has they are too many for the repository
+# ignore images, as they are too many for the repository
 *.ppm
 *.jpg
 *.png
